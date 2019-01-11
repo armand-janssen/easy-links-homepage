@@ -1,0 +1,25 @@
+.custom-icon {
+    vertical-align: middle;
+}
+.card-title {
+    text-align: center;
+}
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #e57373;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }

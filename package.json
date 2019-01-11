@@ -1,0 +1,16 @@
+{
+  "name": "easylinkshomepage",
+  "version": "1.0.0",
+  "description": "Shows a simple homepage containing your favorite links, read from a simple JSON file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Armand Janssen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
