@@ -38,6 +38,23 @@
                 ]
             },
             {
+                "category": "Icons",
+                "links": [
+                    {
+                        "name": "Seek Logo",
+                        "url": "https://seeklogo.com/search/",
+                    },
+                    {
+                        "name": "Icon Finder",
+                        "url": "https://www.iconfinder.com/",
+                    },
+                    {
+                        "name": "Open Clipart",
+                        "url": "https://openclipart.org/",
+                    }
+                ]
+            },
+            {
                 "category": "Google Related",
                 "icon": "iconfinder_new-google-favicon_682665.png",
                 "links": [
