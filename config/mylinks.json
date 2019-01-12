@@ -21,6 +21,11 @@
                         "icon": "iconfinder_nodejs-512_339733.png"
                     },
                     {
+                        "name": "Travis CI",
+                        "url": "https://travis-ci.org",
+                        "icon": "travis-ci-seeklogo.com.svg"
+                    },
+                    {
                         "name": "MaterializeCSS",
                         "url": "https://materializecss.com",
                         "icon": "materialize-seeklogo.com.svg"
