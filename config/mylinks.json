@@ -16,6 +16,11 @@
                         "icon": "iconfinder_nodejs-512_339733.png"
                     },
                     {
+                        "name": "Testing in NodeJS",
+                        "url": "https://hackernoon.com/testing-node-js-in-2018-10a04dd77391",
+                        "icon": "iconfinder_nodejs-512_339733.png"
+                    },
+                    {
                         "name": "ExpressJS",
                         "url": "https://expressjs.com",
                         "icon": "iconfinder_nodejs-512_339733.png"
