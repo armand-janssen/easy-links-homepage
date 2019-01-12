@@ -4,7 +4,7 @@
   "description": "Shows a simple homepage containing your favorite links, read from a simple JSON file",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Armand Janssen",
   "license": "ISC",
@@ -12,5 +12,8 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }
