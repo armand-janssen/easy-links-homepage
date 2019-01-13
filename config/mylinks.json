@@ -125,6 +125,10 @@
                         "url": "https://swagger.io"
                     },
                     {
+                        "name": "Swaggerhub",
+                        "url": "https://app.swaggerhub.com"
+                    },
+                    {
                         "name": "Swagger editor and code generator",
                         "url": "https://editor.swagger.io"
                     },
