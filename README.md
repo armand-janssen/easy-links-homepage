@@ -11,13 +11,17 @@ Shows a simple homepage containing your favorite links, read from a simple JSON 
 ```docker-compose
 version: '2'
 
-easy-links-homepage:
-  jackett:
+services:
+  easy-links-homepage:
     image: "armandjanssen/easy-links-homepage"
     container_name: "easy-links-homepage"
+    volumes:
+      - <YOUR-LOCAL-DIR-HERE>:/usr/src/app/config
     ports:
       - "3000:3000"
     restart: always
+
+
 ```
 
 ## Links
