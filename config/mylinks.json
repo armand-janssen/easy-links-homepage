@@ -32,6 +32,11 @@
                         "icon": "iconfinder_mark-github_298822.png"
                     },
                     {
+                        "name": "Markdown cheat sheet",
+                        "url": "https://www.markdownguide.org/cheat-sheet/",
+                        "icon": "iconfinder_markdown_298823.png"
+                    },
+                    {
                         "name": "NodeJS",
                         "url": "https://nodejs.org",
                         "icon": "iconfinder_nodejs-512_339733.png"
