@@ -1,4 +1,24 @@
 language: node_js
 node_js:
   - "10"
-  
+
+sudo: required
+services:
+  - docker
+
+before_script:
+  - docker pull armandjanssen/easy-links-homepage || true
+script:
+  - docker build --pull --cache-from armandjanssen/easy-links-homepage --tag armandjanssen/easy-links-homepage .
+  - docker run armandjanssen/easy-links-homepage
+
+after_script:
+  - docker images
+
+before_deploy:
+  - docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
+deploy:
+  provider: script
+  script: docker push armandjanssen/easy-links-homepage
+  on:
+    branch: master
