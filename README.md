@@ -20,4 +20,7 @@ easy-links-homepage:
     restart: always
 ```
 
-More info on: https://github.com/armand-janssen/easy-links-homepage
+## Links
+
+* [Github](https://github.com/armand-janssen/easy-links-homepage)
+* [Docker hub](https://github.com/armand-janssen/easy-links-homepage)
