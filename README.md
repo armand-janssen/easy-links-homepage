@@ -7,10 +7,10 @@ Shows a simple homepage containing your favorite links, read from a simple JSON 
 
 **This project is a simple project to toy around with nodejs, express, ejs, github and docker. Code quality is not the major concern here :)**
 
-#docker-compose
+## docker-compose
+```docker-compose
 version: '2'
 
-```docker-compose
 easy-links-homepage:
   jackett:
     image: "armandjanssen/easy-links-homepage"
