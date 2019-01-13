@@ -2,9 +2,13 @@
   "name": "easylinkshomepage",
   "version": "1.0.0",
   "description": "Shows a simple homepage containing your favorite links, read from a simple JSON file",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/armand-janssen/easy-links-homepage.git"
   },
   "author": "Armand Janssen",
   "license": "ISC",
