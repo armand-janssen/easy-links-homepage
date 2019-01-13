@@ -2,6 +2,22 @@
     "mylinks": {
         "categories": [
             {
+                "category": "Easy Links Homepage",
+                "icon": "iconfinder_development_service_2528126.png",
+                "links": [
+                    {
+                        "name": "Github",
+                        "url": "https://github.com/armand-janssen/easy-links-homepage",
+                        "icon": "iconfinder_mark-github_298822.png"
+                    },
+                    {
+                        "name": "Travis",
+                        "url": "https://travis-ci.org/armand-janssen/easy-links-homepage",
+                        "icon": "travis-ci-seeklogo.com.svg"
+                    }
+                ]
+            },
+            {
                 "category": "Development",
                 "icon": "iconfinder_development_service_2528126.png",
                 "links": [
@@ -52,15 +68,15 @@
                 "links": [
                     {
                         "name": "Seek Logo",
-                        "url": "https://seeklogo.com/search/",
+                        "url": "https://seeklogo.com/search/"
                     },
                     {
                         "name": "Icon Finder",
-                        "url": "https://www.iconfinder.com/",
+                        "url": "https://www.iconfinder.com/"
                     },
                     {
                         "name": "Open Clipart",
-                        "url": "https://openclipart.org/",
+                        "url": "https://openclipart.org/"
                     }
                 ]
             },
@@ -115,27 +131,6 @@
                     {
                         "name": "JSON to Swagger Schema",
                         "url": "https://swagger-toolbox.firebaseapp.com"
-                    }
-                ]
-            },
-            {
-                "category": "Infrastructure",
-                "icon": "iconfinder_infrastructure_3763158.png",
-                "links": [
-                    {
-                        "name": "Traefik",
-                        "url": "https://traefik.io",
-                        "icon": "traefik.png"
-                    },
-                    {
-                        "name": "Pi-hole",
-                        "url": "https://pi-hole.net",
-                        "icon": "pi-hole.png"
-                    },
-                    {
-                        "name": "Docker",
-                        "url": "https://www.docker.com",
-                        "icon": "docker.png"
                     }
                 ]
             },
