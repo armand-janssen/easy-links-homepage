@@ -3,10 +3,16 @@ const bodyParser = require('body-parser');
 const app = express()
 const port = 3000
 const filePath = "./config/mylinks.json"
+const templateFilePath = "./config-template/mylinks.json"
 
 var fs = require('fs')
-app.set('view engine', 'ejs')
 
+console.log('Filepath exists: ' + fs.existsSync(filePath))
+if(!fs.existsSync(filePath)) {
+    fs.copyFileSync(templateFilePath, filePath)
+}
+
+app.set('view engine', 'ejs')
 app.get('/', (req, res) => loadPage(res))
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
