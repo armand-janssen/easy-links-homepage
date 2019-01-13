@@ -14,6 +14,11 @@
                         "name": "Travis",
                         "url": "https://travis-ci.org/armand-janssen/easy-links-homepage",
                         "icon": "travis-ci-seeklogo.com.svg"
+                    },
+                    {
+                        "name": "Docker hub",
+                        "url": "https://hub.docker.com/r/armandjanssen/easy-links-homepage",
+                        "icon": "docker.png"
                     }
                 ]
             },
