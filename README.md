@@ -25,6 +25,7 @@ services:
 ```
 ## TODO
 * Rename config to config.json
+* Add tabs, to clean up page
 * Create a way to add custom images, while using docker
 * Add layout config to config json
 * Store links in DB, add API to manage
