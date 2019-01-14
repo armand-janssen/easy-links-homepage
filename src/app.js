@@ -6,9 +6,10 @@ const filePath = "./config/mylinks.json"
 const templateFilePath = "./config-template/mylinks.json"
 
 var fs = require('fs')
-
-console.log('Filepath exists: ' + fs.existsSync(filePath))
-if(!fs.existsSync(filePath)) {
+if(!fs.existsSync(configDir)) {
+    console.log('Config directory does not exist, so creating it...')
+    fs.mkdirSync('')
+    console.log('Copy config from template directory to real config directory')
     fs.copyFileSync(templateFilePath, filePath)
 }
 
@@ -17,7 +18,7 @@ app.get('/', (req, res) => loadPage(res))
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Easy Links Homepage is listening on port ${port}!`))
 
 function loadPage(res) {
     console.log("Function loadPage")
