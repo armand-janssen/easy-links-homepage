@@ -23,6 +23,12 @@ services:
 
 
 ```
+## TODO
+* Rename config to config.json
+* Create a way to add custom images, while using docker
+* Add layout config to config json
+* Store links in DB, add API to manage
+* Add gui to manage
 
 ## Links
 
