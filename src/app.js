@@ -2,13 +2,14 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
 const port = 3000
+const configDir = "./config"
 const filePath = "./config/mylinks.json"
 const templateFilePath = "./config-template/mylinks.json"
 
 var fs = require('fs')
 if(!fs.existsSync(configDir)) {
     console.log('Config directory does not exist, so creating it...')
-    fs.mkdirSync('')
+    fs.mkdirSync(configDir)
     console.log('Copy config from template directory to real config directory')
     fs.copyFileSync(templateFilePath, filePath)
 }
