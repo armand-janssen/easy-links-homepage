@@ -20,9 +20,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.listen(port, () => console.log(`Easy Links Homepage is listening on port ${port}!`))
 
 function loadPage(res) {
+    var startTime = new Date().getTime();
     const data = loadFileSync()
 
-    res.render('index', { categories: data.mylinks.categories });
+    res.render('index', { categories: data.mylinks.categories, startTime: startTime });
 }
 
 function loadFileSync() {
