@@ -3,12 +3,12 @@ const bodyParser = require('body-parser');
 
 const app = express()
 const port = 3000
-const filePath = "./config/mylinks.json"
-const templateFilePath = "./config-template/mylinks.json"
+const filePath = "./config/config.json"
+const templateFilePath = "./config-template/config.json"
 
 var fs = require('fs')
 if(!fs.existsSync(filePath)) {
-    console.log('No config ("mylinks.json") in config dir. Copy config from template directory to real config directory')
+    console.log('No config ("config.json") in config dir. Copy config from template directory to real config directory')
     fs.copyFileSync(templateFilePath, filePath)
 }
 
