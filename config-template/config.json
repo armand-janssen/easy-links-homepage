@@ -1,4 +1,8 @@
 {
+    "config": {
+        "enableGoogleCustomSearch": false,
+        "googleCustomSearchId": "Your personal ID here"
+    },
     "mylinks": {
         "categories": [
             {

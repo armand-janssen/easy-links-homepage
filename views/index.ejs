@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <gcse:searchbox-only></gcse:searchbox-only>
     <div class="row">
         <% if(categories !== null){ %>
         <% categories.forEach(function(category) { %>
@@ -41,9 +42,21 @@
     </div>
 
     <p>Render time: <%= new Date().getTime() - startTime %>ms</p>
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+ 
+    <% if(config.enableGoogleCustomSearch  != null && config.enableGoogleCustomSearch == "true") { %>
+    <script>
+        (function() {
+          var cx = '<%= config.googleCustomSearchId %>';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+          setTimeout("document.getElementById('gsc-i-id1').focus();", 1000);
+        })();
+      </script>
+    <% } %>
 </body>
 
 </html>
