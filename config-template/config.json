@@ -1,180 +1,174 @@
 {
     "config": {
-        "enableGoogleCustomSearch": false,
+        "enableGoogleCustomSearch": "false",
         "googleCustomSearchId": "Your personal ID here"
     },
     "mylinks": {
-        "categories": [
+        "tabs": [
             {
-                "category": "Easy Links Homepage",
-                "icon": "iconfinder_development_service_2528126.png",
-                "links": [
+                "tab": "Home",
+                "categories": [
                     {
-                        "name": "Github",
-                        "url": "https://github.com/armand-janssen/easy-links-homepage",
-                        "icon": "iconfinder_mark-github_298822.png"
+                        "category": "Easy Links Homepage",
+                        "icon": "iconfinder_development_service_2528126.png",
+                        "links": [
+                            {
+                                "name": "Github",
+                                "url": "https://github.com/armand-janssen/easy-links-homepage",
+                                "icon": "iconfinder_mark-github_298822.png"
+                            },
+                            {
+                                "name": "Travis",
+                                "url": "https://travis-ci.org/armand-janssen/easy-links-homepage",
+                                "icon": "travis-ci-seeklogo.com.svg"
+                            },
+                            {
+                                "name": "Docker hub",
+                                "url": "https://hub.docker.com/r/armandjanssen/easy-links-homepage",
+                                "icon": "docker.png"
+                            }
+                        ]
                     },
                     {
-                        "name": "Travis",
-                        "url": "https://travis-ci.org/armand-janssen/easy-links-homepage",
-                        "icon": "travis-ci-seeklogo.com.svg"
-                    },
-                    {
-                        "name": "Docker hub",
-                        "url": "https://hub.docker.com/r/armandjanssen/easy-links-homepage",
-                        "icon": "docker.png"
+                        "category": "Home Domotica",
+                        "icon": "iconfinder_home_298794.png",
+                        "links": [
+                            {
+                                "name": "Home-Assistant",
+                                "url": "https://www.home-assistant.io",
+                                "icon": "homeassistant-192x192.png"
+                            },
+                            {
+                                "name": "Node-Red",
+                                "url": "https://nodered.org",
+                                "icon": "node-red.png"
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "category": "Development",
-                "icon": "iconfinder_development_service_2528126.png",
-                "links": [
+                "tab": "Documentation",
+                "categories": [
                     {
-                        "name": "GitHub",
-                        "url": "https://github.com",
-                        "icon": "iconfinder_mark-github_298822.png"
+                        "category": "Infrastructure",
+                        "icon": "iconfinder_infrastructure_3763158.png",
+                        "links": [
+                            {
+                                "name": "Traefik",
+                                "url": "https://traefik.io",
+                                "icon": "traefik.png"
+                            },
+                            {
+                                "name": "Pi-hole",
+                                "url": "https://pi-hole.net",
+                                "icon": "pi-hole.png"
+                            },
+                            {
+                                "name": "Docker",
+                                "url": "https://www.docker.com",
+                                "icon": "docker.png"
+                            }
+                        ]
                     },
                     {
-                        "name": "Markdown cheat sheet",
-                        "url": "https://www.markdownguide.org/cheat-sheet/",
-                        "icon": "iconfinder_markdown_298823.png"
+                        "category": "Webservices",
+                        "links": [
+                            {
+                                "name": "Swagger",
+                                "url": "https://swagger.io"
+                            },
+                            {
+                                "name": "Swaggerhub",
+                                "url": "https://app.swaggerhub.com"
+                            },
+                            {
+                                "name": "Swagger editor and code generator",
+                                "url": "https://editor.swagger.io"
+                            },
+                            {
+                                "name": "JSON to Swagger Schema",
+                                "url": "https://swagger-toolbox.firebaseapp.com"
+                            }
+                        ]
                     },
                     {
-                        "name": "NodeJS",
-                        "url": "https://nodejs.org",
-                        "icon": "iconfinder_nodejs-512_339733.png"
-                    },
-                    {
-                        "name": "Testing in NodeJS",
-                        "url": "https://hackernoon.com/testing-node-js-in-2018-10a04dd77391",
-                        "icon": "iconfinder_nodejs-512_339733.png"
-                    },
-                    {
-                        "name": "Mocha - NodeJS Testing",
-                        "utl": "https://mochajs.org",
-                        "icon": "iconfinder_nodejs-512_339733.png"
-                    },
-                    {
-                        "name": "ExpressJS",
-                        "url": "https://expressjs.com",
-                        "icon": "iconfinder_nodejs-512_339733.png"
-                    },
-                    {
-                        "name": "Travis CI",
-                        "url": "https://travis-ci.org",
-                        "icon": "travis-ci-seeklogo.com.svg"
-                    },
-                    {
-                        "name": "MaterializeCSS",
-                        "url": "https://materializecss.com",
-                        "icon": "materialize-seeklogo.com.svg"
-                    },
-                    {
-                        "name": "MaterializeCSS Multi-Column Card Flow",
-                        "url": "https://codepen.io/mike-north/pen/MwVoYp",
-                        "icon": "materialize-seeklogo.com.svg"
-                    },
-                    {
-                        "name": "EJS Embedded JavaScript Templateing",
-                        "url": "https://ejs.co",
-                        "icon": "iconfinder_nodejs-512_339733.png"
+                        "category": "Development",
+                        "icon": "iconfinder_development_service_2528126.png",
+                        "links": [
+                            {
+                                "name": "GitHub",
+                                "url": "https://github.com",
+                                "icon": "iconfinder_mark-github_298822.png"
+                            },
+                            {
+                                "name": "Markdown cheat sheet",
+                                "url": "https://www.markdownguide.org/cheat-sheet/",
+                                "icon": "iconfinder_markdown_298823.png"
+                            },
+                            {
+                                "name": "NodeJS",
+                                "url": "https://nodejs.org",
+                                "icon": "iconfinder_nodejs-512_339733.png"
+                            },
+                            {
+                                "name": "Testing in NodeJS",
+                                "url": "https://hackernoon.com/testing-node-js-in-2018-10a04dd77391",
+                                "icon": "iconfinder_nodejs-512_339733.png"
+                            },
+                            {
+                                "name": "Mocha - NodeJS Testing",
+                                "utl": "https://mochajs.org",
+                                "icon": "iconfinder_nodejs-512_339733.png"
+                            },
+                            {
+                                "name": "ExpressJS",
+                                "url": "https://expressjs.com",
+                                "icon": "iconfinder_nodejs-512_339733.png"
+                            },
+                            {
+                                "name": "Travis CI",
+                                "url": "https://travis-ci.org",
+                                "icon": "travis-ci-seeklogo.com.svg"
+                            },
+                            {
+                                "name": "MaterializeCSS",
+                                "url": "https://materializecss.com",
+                                "icon": "materialize-seeklogo.com.svg"
+                            },
+                            {
+                                "name": "MaterializeCSS Multi-Column Card Flow",
+                                "url": "https://codepen.io/mike-north/pen/MwVoYp",
+                                "icon": "materialize-seeklogo.com.svg"
+                            },
+                            {
+                                "name": "EJS Embedded JavaScript Templateing",
+                                "url": "https://ejs.co",
+                                "icon": "iconfinder_nodejs-512_339733.png"
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "category": "Icons",
-                "links": [
+                "tab": "Resources",
+                "categories": [
                     {
-                        "name": "Seek Logo",
-                        "url": "https://seeklogo.com/search/"
-                    },
-                    {
-                        "name": "Icon Finder",
-                        "url": "https://www.iconfinder.com/"
-                    },
-                    {
-                        "name": "Open Clipart",
-                        "url": "https://openclipart.org/"
-                    }
-                ]
-            },
-            {
-                "category": "Google Related",
-                "icon": "iconfinder_new-google-favicon_682665.png",
-                "links": [
-                    {
-                        "name": "Google",
-                        "url": "https://www.google.com",
-                        "icon": "iconfinder_new-google-favicon_682665.png"
-                    },
-                    {
-                        "name": "Google Calendar",
-                        "url": "https://calendar.google.com/",
-                        "icon": "iconfinder_new-google-favicon_682665.png"
-                    },
-                    {
-                        "name": "GMail",
-                        "url": "https://mail.google.com",
-                        "icon": "iconfinder_new-google-favicon_682665.png"
-                    }
-                ]
-            },
-            {
-                "category": "Home Domotica",
-                "icon": "iconfinder_home_298794.png",
-                "links": [
-                    {
-                        "name": "Home-Assistant",
-                        "url": "https://www.home-assistant.io",
-                        "icon": "homeassistant-192x192.png"
-                    },
-                    {
-                        "name": "Node-Red",
-                        "url": "https://nodered.org",
-                        "icon": "node-red.png"
-                    }
-                ]
-            },
-            {
-                "category": "Webservices",
-                "links": [
-                    {
-                        "name": "Swagger",
-                        "url": "https://swagger.io"
-                    },
-                    {
-                        "name": "Swaggerhub",
-                        "url": "https://app.swaggerhub.com"
-                    },
-                    {
-                        "name": "Swagger editor and code generator",
-                        "url": "https://editor.swagger.io"
-                    },
-                    {
-                        "name": "JSON to Swagger Schema",
-                        "url": "https://swagger-toolbox.firebaseapp.com"
-                    }
-                ]
-            },
-            {
-                "category": "Infrastructure",
-                "icon": "iconfinder_infrastructure_3763158.png",
-                "links": [
-                    {
-                        "name": "Traefik",
-                        "url": "https://traefik.io",
-                        "icon": "traefik.png"
-                    },
-                    {
-                        "name": "Pi-hole",
-                        "url": "https://pi-hole.net",
-                        "icon": "pi-hole.png"
-                    },
-                    {
-                        "name": "Docker",
-                        "url": "https://www.docker.com",
-                        "icon": "docker.png"
+                        "category": "Icons",
+                        "links": [
+                            {
+                                "name": "Seek Logo",
+                                "url": "https://seeklogo.com/search/"
+                            },
+                            {
+                                "name": "Icon Finder",
+                                "url": "https://www.iconfinder.com/"
+                            },
+                            {
+                                "name": "Open Clipart",
+                                "url": "https://openclipart.org/"
+                            }
+                        ]
                     }
                 ]
             }
