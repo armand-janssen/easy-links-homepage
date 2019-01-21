@@ -23,7 +23,7 @@ function loadPage(res) {
     var startTime = new Date().getTime();
     const data = loadFileSync()
 
-    res.render('index', { categories: data.mylinks.categories, config: data.config, startTime: startTime });
+    res.render('index', { tabs: data.mylinks.tabs, config: data.config, startTime: startTime });
 }
 
 function loadFileSync() {
