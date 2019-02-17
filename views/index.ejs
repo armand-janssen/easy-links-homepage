@@ -14,49 +14,75 @@
 
 <body>
     <gcse:searchbox-only></gcse:searchbox-only>
-    <div class="row">
-        <% if(categories !== null){ %>
-        <% categories.forEach(function(category) { %>
-        <div class="col s12 m3">
-            <div class="card-panel teal grey lighten-3">
-                <span class="card-title  black-text">
-                    <% if(category.icon != null) { %>
-                    <img src="images/<%= category.icon %>" width="25" class="custom-icon" />
-                    <% } %>
-                    <%= category.category %>
-                </span>
-                <div class="collection">
-                    <% category.links.forEach(function(link){ %>
-                    <a href="<%= link.url %>" class="collection-item">
-                        <% if(link.icon != null) { %>
-                        <img src="images/<%= link.icon %>" height="25" class="custom-icon" />
-                        <% } %>
-                        <%= link.name %>
-                    </a>
-                    <% }) // end links.forEach%>
-                </div>
+
+    <% if(tabs !=null) { %>
+        <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <% tabs.forEach(function(tab) { %>
+                <li class="tab col s3">
+                    <a href="#<%=tab.tab.replace(" "," _") %>">
+                        <%=tab.tab %></a>
+                </li>
+                <% }) // end tabs.forEach %>
+            </ul>
+        </div>
+        <% tabs.forEach(function(tab) { %>
+        <div id="<%=tab.tab.replace(" "," _") %>" class="col s12">
+            <div class="row">
+                <% if(tab.categories != null){ %>
+                    <% tab.categories.forEach(function(category) { %>
+                    <div class="col s12 m3">
+                        <div class="card-panel teal grey lighten-3">
+                            <span class="card-title  black-text">
+                                <% if(category.icon != null) { %>
+                                <img src="images/<%= category.icon %>" width="25" class="custom-icon" />
+                                <% } %>
+                                <%= category.category %>
+                            </span>
+                            <div class="collection">
+                                <% category.links.forEach(function(link){ %>
+                                <a href="<%= link.url %>" class="collection-item">
+                                    <% if(link.icon != null) { %>
+                                    <img src="images/<%= link.icon %>" height="25" class="custom-icon" />
+                                    <% } %>
+                                    <%= link.name %>
+                                </a>
+                                <% }) // end links.forEach%>
+                            </div>
+                        </div>
+                    </div>
+                <% }) // end category forEach %>
+                <% } // end null check %>
             </div>
         </div>
-        <% }) // end category forEach %>
-        <% } // end null check %>
+        <% }) // end tabs.forEach %>
     </div>
 
-    <p>Render time: <%= new Date().getTime() - startTime %>ms</p>
- 
+    <% } // if if tabs != null %>
+
+
+    <p>Render time:
+        <%= new Date().getTime() - startTime %>ms</p>
+
     <% if(config.enableGoogleCustomSearch  != null && config.enableGoogleCustomSearch == "true") { %>
     <script>
-        (function() {
-          var cx = '<%= config.googleCustomSearchId %>';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-          setTimeout("document.getElementById('gsc-i-id1').focus();", 1000);
+        (function () {
+            var cx = '<%= config.googleCustomSearchId %>';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+            setTimeout("document.getElementById('gsc-i-id1').focus();", 1000);
         })();
-      </script>
+    </script>
     <% } %>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
 </body>
 
 </html>
